@@ -1,0 +1,10 @@
+{
+  "citation_coverage": 1.0,
+  "graph_hits": 2,
+  "intents": [
+    "exception",
+    "procedure",
+    "procedure"
+  ],
+  "queries": 3
+}

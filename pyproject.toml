@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph-sop-agent"
+version = "0.1.0"
+description = "A hybrid structured/unstructured SOP assistant with intent routing, graph traversal, BM25 retrieval, parallel tool execution, citations, and verified knowledge evolution."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Asher"}]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["graph_sop_agent*"]
