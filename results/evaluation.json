@@ -1,0 +1,92 @@
+{
+  "knowledge_base": {
+    "services": 24,
+    "runbooks": 76,
+    "uncovered_pairs": 68,
+    "questions": 600
+  },
+  "dev": {
+    "BM25 RAG": {
+      "accuracy": 0.4266666666666667,
+      "first_step": 1.0,
+      "next_step": 1.0,
+      "dependency_owner": 0.13333333333333333,
+      "escalation": 0.0,
+      "unanswerable": 0.0,
+      "answered_the_unanswerable": 1.0,
+      "citations_cover_gold_evidence": 0.5
+    },
+    "BM25 + entity filter": {
+      "accuracy": 0.5033333333333333,
+      "first_step": 1.0,
+      "next_step": 1.0,
+      "dependency_owner": 0.13333333333333333,
+      "escalation": 0.0,
+      "unanswerable": 0.38333333333333336,
+      "answered_the_unanswerable": 0.6166666666666667,
+      "citations_cover_gold_evidence": 0.5
+    },
+    "graph only": {
+      "accuracy": 0.6,
+      "first_step": 0.0,
+      "next_step": 0.0,
+      "dependency_owner": 1.0,
+      "escalation": 1.0,
+      "unanswerable": 1.0,
+      "answered_the_unanswerable": 0.0,
+      "citations_cover_gold_evidence": 1.0
+    },
+    "hybrid (graph + runbooks)": {
+      "accuracy": 1.0,
+      "first_step": 1.0,
+      "next_step": 1.0,
+      "dependency_owner": 1.0,
+      "escalation": 1.0,
+      "unanswerable": 1.0,
+      "answered_the_unanswerable": 0.0,
+      "citations_cover_gold_evidence": 1.0
+    }
+  },
+  "paraphrase": {
+    "BM25 RAG": {
+      "accuracy": 0.44,
+      "first_step": 1.0,
+      "next_step": 0.9666666666666667,
+      "dependency_owner": 0.23333333333333334,
+      "escalation": 0.0,
+      "unanswerable": 0.0,
+      "answered_the_unanswerable": 1.0,
+      "citations_cover_gold_evidence": 0.5
+    },
+    "BM25 + entity filter": {
+      "accuracy": 0.5033333333333333,
+      "first_step": 1.0,
+      "next_step": 0.9666666666666667,
+      "dependency_owner": 0.23333333333333334,
+      "escalation": 0.0,
+      "unanswerable": 0.31666666666666665,
+      "answered_the_unanswerable": 0.6833333333333333,
+      "citations_cover_gold_evidence": 0.5
+    },
+    "graph only": {
+      "accuracy": 0.4,
+      "first_step": 0.0,
+      "next_step": 0.0,
+      "dependency_owner": 1.0,
+      "escalation": 0.0,
+      "unanswerable": 1.0,
+      "answered_the_unanswerable": 0.0,
+      "citations_cover_gold_evidence": 1.0
+    },
+    "hybrid (graph + runbooks)": {
+      "accuracy": 0.7933333333333333,
+      "first_step": 1.0,
+      "next_step": 0.9666666666666667,
+      "dependency_owner": 1.0,
+      "escalation": 0.0,
+      "unanswerable": 1.0,
+      "answered_the_unanswerable": 0.0,
+      "citations_cover_gold_evidence": 1.0
+    }
+  }
+}

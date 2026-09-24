@@ -4,17 +4,29 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "graph-sop-agent"
-version = "0.1.0"
-description = "A hybrid structured/unstructured SOP assistant with intent routing, graph traversal, BM25 retrieval, parallel tool execution, citations, and verified knowledge evolution."
+version = "1.0.0"
+description = "Runbook question answering over a service graph and SOP documents: intent routing, graph traversal for multi-hop questions, runbook lookup for procedures, abstention, and review-gated knowledge ingestion, compared with document-only RAG."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "Asher"}]
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-]
+authors = [{name = "Yixuan Zhang"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+sop-agent = "sopagent.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["graph_sop_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

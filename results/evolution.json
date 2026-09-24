@@ -1,0 +1,22 @@
+{
+  "proposals": 40,
+  "review": {
+    "accepted": 23,
+    "not_approved": 11,
+    "quarantined_conflict": 6
+  },
+  "questions_on_new_pairs": [
+    {
+      "stage": "before ingestion",
+      "answered_correctly": 0,
+      "abstained": 40,
+      "answered_wrongly": 0
+    },
+    {
+      "stage": "after ingestion",
+      "answered_correctly": 23,
+      "abstained": 17,
+      "answered_wrongly": 0
+    }
+  ]
+}
